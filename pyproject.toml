@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "yoga-pose-detection"
+version = "1.0.0"
+description = ""
+authors = ["Deepak Chauhan <dee_chauhan@hotmail.com>", "Bhawna Priya <bhawna1997@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.3"
+opencv-python = "^4.7.0.72"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
