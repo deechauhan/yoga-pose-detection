@@ -6,7 +6,7 @@ This launcher should be able to:
 """
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)  # type:ignore[call-arg]
 
 if not cap.isOpened():
     print("Error: Could not open camera")
@@ -20,10 +20,10 @@ while True:
 
     # Mirror each frame
     mirrored_frame = cv2.flip(original_frame, 1)
-    cv2.imshow("Camera", mirrored_frame)
+    cv2.imshow("Yoga pose detection", mirrored_frame)
 
     key = cv2.waitKey(1)
-    if key == ord('q'):
+    if key == ord("q"):
         break
 
 cap.release()
