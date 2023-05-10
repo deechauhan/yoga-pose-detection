@@ -29,5 +29,8 @@ repos:
         args:
           - --strict
           - --no-warn-no-return
-        additional_dependencies:
-          - "opencv-stubs"
+        additional_dependencies: [
+          "opencv-stubs",
+          "pydantic",
+          "torch"
+        ]
